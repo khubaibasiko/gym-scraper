@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-RUN pip install fastapi uvicorn facebook-scraper requests --no-cache-dir
+RUN pip install fastapi uvicorn facebook-scraper requests lxml_html_clean --no-cache-dir
 
 COPY main.py .
 
